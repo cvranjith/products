@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class ProductController {
 
 	@RequestMapping ("/hello")
-	public String Hello() {
-		return "Hi OFSS Japac Microserices Interest group!";
+	public String sayHello() {
+		return "Hi OFSS Japac Microservices Interest group!";
 	}
 	
 	@RequestMapping ("/products")
@@ -21,13 +21,18 @@ public class ProductController {
 
 		
 		
-		Product p1 = new Product ("FCUBS","FLEXCUBE Universal Banking", "14.2");
-		Product p2 = new Product ("FCR","FLEXCUBE Retail Banking", "11.2");
-		Product p3 = new Product ("OBVAM","Oracle Banking VAM", "14.2");
-		
+		Product p1 = new Product ("FCUBS","FLEXCUBE UniversalBanking", "14.2");
+		Product p2 = new Product ("FCR","FLEXCUBE Retail Banking", "14.2");
+		Product p3 = new Product ("FCIS","FLEXCUBE Investor Service","14.2");
+		Product p4 = new Product ("OBP","Oracle Banking Platform","1.4");
+		Product p5 = new Product ("ELCM","Enterprise Limits and Collateral","11.2");
+	
 		prds.add(p1);
 		prds.add(p2);
 		prds.add(p3);
+		prds.add(p4);
+		prds.add(p5);
+		
 		return prds;
 		
 		
